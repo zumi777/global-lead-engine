@@ -1,0 +1,11 @@
+import './globals.css';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Global Lead Engine',
+  description: 'Worldwide B2B company discovery and lead verification engine',
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return <html lang="en"><body>{children}</body></html>;
+}
